@@ -45,7 +45,9 @@ module.exports = (_, argv) => ({
       name: "starter",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        './DogWidget': './src/DogWidget.jsx',
+      },
       shared: {
         ...deps,
         react: {
